@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Hukum Universal Rizki - Deka Sonjaya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FFF9E6',
+                            300: '#FCE082',
+                            400: '#F7C948',
+                            500: '#E1A100',
+                            600: '#C68A00',
+                            700: '#996700'
+                        },
+                        darknavy: '#0B0F19'
+                    },
+                    fontFamily: {
+                        heading: ['Cinzel', 'serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0B0F19;
+            color: #F3F4F6;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(247, 201, 72, 0.2);
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(247, 201, 72, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(225, 161, 0, 0.15);
+        }
+
+        /* Gold Gradient Text */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFF9E6 0%, #F7C948 50%, #C68A00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A3447;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E1A100;
+        }
+
+        /* Slide Animation Transitions */
+        .slide-container {
+            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+        }
+
+        .slide-hidden {
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scale(0.98);
+        }
+
+        .slide-active {
+            opacity: 1;
+            pointer-events: auto;
+            position: relative;
+            transform: scale(1);
+        }
+
+        /* Glow effects */
+        .gold-glow {
+            box-shadow: 0 0 35px rgba(247, 201, 72, 0.25);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-gold-500 selection:text-black">
+
+    <!-- SLIDE 1: LANDING PAGE / OPENING -->
+    <div id="slide1" class="slide-container slide-active min-h-screen flex flex-col justify-between relative overflow-hidden">
+        <!-- Background Overlay & Image -->
+        <div class="absolute inset-0 bg-cover bg-center z-0 filter brightness-40 scale-105 transition-transform duration-10000 ease-out" style="background-image: url('background.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-darknavy/80 via-darknavy/60 to-darknavy z-0"></div>
+
+        <!-- Header / Logo -->
+        <header class="relative z-10 pt-8 px-6 text-center">
+            <div class="inline-block p-1.5 rounded-full bg-gradient-to-r from-gold-400/30 via-gold-500/10 to-transparent">
+                <img src="logo.jpg" alt="Logo Group" onerror="this.src='https://placehold.co/120x120/1e293b/f7c948?text=LOGO'" class="h-20 w-20 md:h-24 md:w-24 rounded-full object-cover border-2 border-gold-400 shadow-xl mx-auto gold-glow">
+            </div>
+            <p class="mt-3 text-xs tracking-widest text-gold-300 uppercase font-semibold">Para Pejuang Subuh & Modern Spiritual</p>
+        </header>
+
+        <!-- Main Hero Content -->
+        <main class="relative z-10 my-auto px-4 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-gold-300 text-sm font-medium mb-6 border border-gold-500/30">
+                <i class="fa-solid font-star text-gold-400 text-xs"></i>
+                Panduan Rezeki & Sunnatullah
+            </span>
+            <h1 class="font-heading text-3xl sm:text-5xl md:text-6xl font-bold text-gradient-gold tracking-wide leading-tight mb-6">
+                9 Hukum Universal Rizki
+            </h1>
+            <p class="text-slate-300 text-base md:text-xl font-light leading-relaxed max-w-2xl mb-8">
+                "Rezeki itu seperti bayangan—semakin Anda kejar dengan membabi buta, ia akan semakin lari menjauh. Namun, ketika Anda berjalan menuju cahaya-Nya, bayangan itu yang akan berbalik mengejar Anda."
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+                <button onclick="goToSlide(2)" class="group relative px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-slate-950 font-bold text-lg shadow-lg hover:shadow-gold-500/30 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-3">
+                    <span>Masuk ke Materi Utama</span>
+                    <i class="fa-solid fa-arrow-right text-slate-950 group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer Info -->
+        <footer class="relative z-10 pb-6 px-4 text-center text-slate-500 text-xs">
+            <p>Disampaikan oleh <span class="text-gold-400 font-medium">Deka Sonjaya</span> • © 2026 All Rights Reserved</p>
+        </footer>
+    </div>
+
+
+    <!-- SLIDE 2: MAIN CONTENT & NARRATION -->
+    <div id="slide2" class="slide-container slide-hidden min-h-screen flex flex-col relative">
+        <!-- Background Overlay & Image -->
+        <div class="fixed inset-0 bg-cover bg-center z-0 filter brightness-25" style="background-image: url('background.jpg');"></div>
+        <div class="fixed inset-0 bg-gradient-to-b from-darknavy/90 via-darknavy/85 to-darknavy z-0"></div>
+
+        <!-- Sticky Header Controls -->
+        <header class="sticky top-0 z-30 glass-panel border-b border-gold-500/20 px-4 py-3 md:px-8">
+            <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
+                <button onclick="goToSlide(1)" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 hover:text-gold-300 hover:bg-slate-700/80 transition text-sm">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span class="hidden sm:inline">Kembali</span>
+                </button>
+
+                <div class="flex items-center gap-3">
+                    <img src="logo.jpg" alt="Logo" onerror="this.src='https://placehold.co/40x40/1e293b/f7c948?text=L'" class="w-8 h-8 rounded-full border border-gold-400/50">
+                    <h2 class="font-heading text-sm md:text-base font-bold text-gold-300 truncate">9 Hukum Universal Rizki</h2>
+                </div>
+
+                <button onclick="toggleNarrationModal()" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-gold-500/20 to-gold-400/10 border border-gold-500/40 text-gold-300 hover:bg-gold-500 hover:text-slate-950 transition text-sm font-semibold shadow-md">
+                    <i class="fa-solid fa-scroll"></i>
+                    <span>Tampilkan Narasi</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Body Area -->
+        <main class="relative z-10 flex-1 max-w-5xl mx-auto w-full px-4 py-6 md:py-10 space-y-8">
+            
+            <!-- Audio Player Banner -->
+            <div class="glass-panel rounded-2xl p-6 md:p-8 gold-glow relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-gold-500/10 text-9xl pointer-events-none">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-6 justify-between relative z-10">
+                    <div class="text-center md:text-left">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-gold-400">Audio Pembelajaran</span>
+                        <h3 class="text-2xl font-bold font-heading text-white mt-1">Dengarkan Pemaparan Lengkap</h3>
+                        <p class="text-slate-300 text-sm mt-1">Pembicara: <span class="text-gold-300 font-medium">Deka Sonjaya</span></p>
+                    </div>
+
+                    <!-- HTML5 Audio Player -->
+                    <div class="w-full md:w-auto min-w-[280px] sm:min-w-[360px] bg-slate-900/90 p-3 rounded-xl border border-gold-500/30">
+                        <audio id="audioPlayer" class="w-full h-10" controls>
+                            <source src="9Hukum.mp3" type="audio/mpeg">
+                            Browser Anda tidak mendukung elemen audio.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Cards Intro -->
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <h3 class="text-xl md:text-2xl font-bold font-heading text-gradient-gold">Daftar 9 Hukum Alam Semesta & Spiritual</h3>
+                <p class="text-slate-400 text-sm">Berikut adalah cetak biru Sunnatullah untuk mengalirkan keberkahan dan kelimpahan dalam hidup Anda.</p>
+            </div>
+
+            <!-- 9 Laws Interactive Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <!-- Card 1 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">1</span>
+                            <i class="fa-solid fa-users text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Divine Oneness</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Kesatuan Ilahi</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Buka pintu langitmu dengan kekuatan peduli dan silaturahmi. Allah menitipkan rezeki melalui orang lain.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[HR. Bukhari & Muslim]</span>
+                        <button onclick="toggleNarrationModal(1)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">2</span>
+                            <i class="fa-solid fa-wave-square text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Vibration</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Getaran</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Lepaskan racun pikiranmu dengan kekuatan khusnudzon. Pancarkan getaran frekuensi tinggi keberkahan.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[HR. Bukhari & Muslim]</span>
+                        <button onclick="toggleNarrationModal(2)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">3</span>
+                            <i class="fa-solid fa-magnet text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Attraction</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Tarik-Menarik</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Rayakan setiap detik hidupmu dengan kekuatan bersyukur. Rasa syukur adalah magnet rezeki terkuat.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[QS. Ibrahim: 7]</span>
+                        <button onclick="toggleNarrationModal(3)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">4</span>
+                            <i class="fa-solid fa-mirror text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Correspondence</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Refleksi Batin</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Bersihkan wadah hatimu dengan kekuatan ikhlas dan istigfar. Dunia luar merefleksikan kedalaman batin.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[QS. Nuh: 10-12]</span>
+                        <button onclick="toggleNarrationModal(4)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">5</span>
+                            <i class="fa-solid fa-seedling text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Cause & Effect</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Sebab-Akibat</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Dobrak batasan nasibmu dengan kekuatan taqwa. Tanam sebab taqwa, Allah yang mengalirkan akibat keajaiban.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[QS. At-Talaq: 2-3]</span>
+                        <button onclick="toggleNarrationModal(5)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">6</span>
+                            <i class="fa-solid fa-hand-holding-heart text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Compensation</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Kompensasi</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Alirkan berkatmu melalui kekuatan infaq dan sedekah. Tangan yang memberi akan terus diisi kembali oleh-Nya.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[QS. Al-Baqarah: 261]</span>
+                        <button onclick="toggleNarrationModal(6)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">7</span>
+                            <i class="fa-solid fa-scale-balanced text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">Law of Relativity & Polarity</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Polaritas & Keseimbangan</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Amankan kedamaian jiwamu dengan sabar dan qonaah. Kesulitan selalu digandeng oleh kemudahan.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[QS. Al-Insyirah: 5]</span>
+                        <button onclick="toggleNarrationModal(7)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">8</span>
+                            <i class="fa-solid fa-anchor text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Rhythm</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Irama</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Tegakkan jangkar hidupmu dengan kekuatan iman di tengah siklus pasang surut roda ekonomi dunia.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[QS. Ali 'Imran: 140]</span>
+                        <button onclick="toggleNarrationModal(8)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center text-sm border border-gold-500/40">9</span>
+                            <i class="fa-solid fa-yin-yang text-gold-400/50 text-lg"></i>
+                        </div>
+                        <h4 class="font-heading font-bold text-gold-300 text-lg mb-2">The Law of Gender</h4>
+                        <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mb-3">Hukum Proses & Pasrah</p>
+                        <p class="text-slate-300 text-sm line-clamp-4 leading-relaxed">
+                            Rebahkan seluruh lelahmu dalam dekapan kekuatan tawakal setelah ikhtiar maksimal di siang hari.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center text-xs text-gold-400">
+                        <span>[QS. At-Talaq: 3]</span>
+                        <button onclick="toggleNarrationModal(9)" class="hover:underline flex items-center gap-1">Baca <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- MODAL / DRAWER NARRATION TEXT -->
+    <div id="narrationModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="glass-panel w-full max-w-4xl max-h-[85vh] rounded-2xl flex flex-col shadow-2xl border border-gold-500/30 overflow-hidden">
+            
+            <!-- Modal Header -->
+            <div class="px-6 py-4 border-b border-slate-700/60 flex items-center justify-between bg-slate-900/80">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-book-open text-gold-400 text-lg"></i>
+                    <h3 class="font-heading font-bold text-lg text-gold-300">Naskah Narasi Lengkap</h3>
+                </div>
+                <button onclick="toggleNarrationModal()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content Body -->
+            <div id="modalContent" class="p-6 md:p-8 overflow-y-auto space-y-6 text-slate-200 leading-relaxed text-sm md:text-base">
+                
+                <!-- Pembuka -->
+                <div class="p-5 rounded-xl bg-slate-800/40 border-l-4 border-gold-400 space-y-3">
+                    <p class="font-semibold text-gold-300">Assalammualaikum warahmatullahhi wabarakatu..</p>
+                    <p>Selamat pagi dan salam sukses untuk kita semua! Tetap semangat ya! Saya <strong>Deka Sonjaya</strong>, senang sekali bisa menyapa Anda di pagi yang penuh berkah ini.</p>
+                    <p>Saudaraku,.. Pernahkah Anda merasa sudah bekerja mati-matian, memeras keringat dari pagi hingga malam, namun rasanya rezeki begitu seret dan jalan hidup terasa buntu?</p>
+                    <p>Kita sering kali lelah bukan karena kurang bekerja keras, melainkan karena kita sibuk mengejar rezeki dengan cara melanggar hukum-hukum takdir yang telah ditetapkan oleh Allah Subhanahu Wata'ala. Di dunia pengembangan diri modern, hukum-hukum ini dikenal sebagai <em>Universal Laws</em>, sedangkan dalam Islam, ia adalah cetak biru dari <em>Sunnatullah</em>—aturan main Allah di alam semesta.</p>
+                    <p class="italic text-gold-200">Rezeki itu seperti bayangan—semakin Anda kejar dengan membabi buta, ia akan semakin lari menjauh. Namun, ketika Anda berjalan menuju cahaya-Nya, bayangan itu yang akan berbalik mengejar Anda.</p>
+                    <p>Mari kita tundukkan ego sejenak, rasakan dengan hati yang paling dalam, bagaimana 9 Hukum Alam Semesta dan Kekuatan Spiritual ini bekerja untuk mengalirkan rezeki langsung ke hadapan Anda.</p>
+                </div>
+
+                <!-- Point 1 -->
+                <div id="law-1" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">1. The Law of Divine Oneness (Hukum Kesatuan Ilahi)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Bukalah Pintu Langitmu dengan Kekuatan Peduli dan Silaturahmi</p>
+                    <p class="text-slate-300">Rezekimu tidak pernah turun langsung dalam bentuk lembaran uang dari langit. Allah selalu menitipkannya melalui tangan manusia lain. Berapa banyak dari kita yang menutup pintu rezekinya sendiri hanya karena memelihara ego, mematikan rasa empati, atau memutuskan hubungan dengan sesama?</p>
+                    <p class="text-slate-300">Hukum Kesatuan Ilahi ini mengingatkan bahwa kita semua saling terhubung dalam jaring-jaring kehidupan. Menjaga aliran rezeki berarti Anda harus mengaktifkan rasa peduli pada kesulitan orang lain dan merajut kembali tali silaturahmi yang sempat renggang. Rasakan getaran kebaikan itu saat Anda menurunkan ego untuk menyapa kembali teman lama, menyisihkan perhatian untuk tetangga yang kesusahan, atau menjabat erat tangan saudaramu dengan tulus. Saat Anda melembutkan hati untuk peduli dan melonggarkan hubungan antarmanusia, Allah seketika melonggarkan sumbatan rezeki Anda <span class="text-gold-400 font-medium">[Hadits Riwayat Bukhari & Muslim]</span>.</p>
+                </div>
+
+                <!-- Point 2 -->
+                <div id="law-2" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">2. The Law of Vibration (Hukum Getaran)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Lepaskan Racun Pikiranmu dengan Kekuatan Khusnudzon</p>
+                    <p class="text-slate-300">Apa yang berkecamuk di dalam kepalamu saat terbangun di pagi hari? Ketakutan akan miskin? Kecemasan akan utang yang menumpuk? Ketahuilah, segala sesuatu di alam semesta ini memancarkan getaran energi, termasuk pikiran Anda. Kecemasan adalah frekuensi rendah yang justru menjauhkan berkah.</p>
+                    <p class="text-slate-300">Allah berbisik langsung ke hatimu: <em>"Aku sesuai dengan persangkaan hamba-Ku."</em> <span class="text-gold-400 font-medium">[Hadits Riwayat Bukhari & Muslim]</span>. Jika Anda menyambut hari dengan frekuensi ketakutan, maka ketakutan itulah yang mewujud nyata. Mulai hari ini, ubah getaranmu. Bisikkan pada jiwamu yang lelah bahwa Anda punya Allah yang Maha Kaya, dan Dia tidak akan pernah membiarkan hamba-Nya didera kesusahan.</p>
+                </div>
+
+                <!-- Point 3 -->
+                <div id="law-3" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">3. The Law of Attraction (Hukum Tarik-Menarik)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Rayakan Setiap Detik Hidupmu dengan Kekuatan Bersyukur</p>
+                    <p class="text-slate-300">Berhentilah berfokus pada apa yang belum Anda miliki, hingga Anda buta terhadap jutaan nikmat yang sudah ada di depan mata. Tangisanmu atas omzet yang menurun sering kali membuatmu lupa bersyukur atas napas yang masih gratis dan tubuh yang masih sehat.</p>
+                    <p class="text-slate-300">Hukum Tarik-Menarik menyatakan bahwa energi yang sejenis akan saling menarik. Syukur adalah magnet rezeki terkuat di alam semesta <span class="text-gold-400 font-medium">[Al-Qur'an Surah Ibrahim: 7]</span>. Begitu Anda mampu mengucap Alhamdulillah dengan mata yang berkaca-kaca atas uang sekecil apa pun di dompetmu, di saat itulah kapasitas batinmu diperluas dan ditarik oleh Allah untuk menerima kelimpahan berikutnya.</p>
+                </div>
+
+                <!-- Point 4 -->
+                <div id="law-4" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">4. The Law of Correspondence (Hukum Korespondensi / Refleksi)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Bersihkan Wadah Hatimu dengan Kekuatan Ikhlas dan Istigfar</p>
+                    <p class="text-slate-300">Mengapa rezeki Anda tersendat meskipun Anda merasa sudah melakukan segalanya? Hukum Korespondensi menegaskan bahwa dunia luar Anda adalah cerminan langsung dari dunia batin Anda. Jika di dalam dada penuh noda dosa, rasa pamer (ria), dan dendam, maka realitas keuangan Anda di luar pun akan ikut keruh dan buntu.</p>
+                    <p class="text-slate-300">Duduklah malam ini, menunduklah, dan tumpahkan air matamu lewat istigfar <span class="text-gold-400 font-medium">[Al-Qur'an Surah Nuh: 10-12]</span>. Mintalah ampunan atas segala ego yang kotor. Begitu batinmu dibersihkan dan disetel ulang ke titik ikhlas karena Allah, realitas luar hidupmu akan berubah—rezeki akan mengalir deras, selembut air yang mengalir di sungai yang jernih.</p>
+                </div>
+
+                <!-- Point 5 -->
+                <div id="law-5" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">5. The Law of Cause and Effect (Hukum Sebab-Akibat)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Dobrak Batasan Nasibmu dengan Kekuatan Taqwa</p>
+                    <p class="text-slate-300">Jika Anda berpikir rezeki hanya milik mereka yang punya modal besar atau koneksi pejabat, Anda keliru. Ada hukum sebab-akibat yang mutlak di alam semesta ini. Ketika Anda menanam aksi berupa Taqwa—berani berkata "Tidak" pada proyek yang haram, menolak mengurangi timbangan, dan patuh pada aturan-Nya—maka reaksinya adalah keajaiban tertinggi.</p>
+                    <p class="text-slate-300">Allah telah menandatangani kontrak garansi yang mutlak: <em>"Barangsiapa bertaqwa kepada Allah, Dia akan mengadakan baginya jalan keluar dan memberinya rezeki dari arah yang tiada disangka-sangkanya."</em> <span class="text-gold-400 font-medium">[Al-Qur'an Surah At-Talaq: 2-3]</span>. Tugasmu bukan memikirkan bagaimana mekanismenya, tugasmu hanyalah menanam sebab (taqwa), dan biarkan Allah memberikan akibatnya.</p>
+                </div>
+
+                <!-- Point 6 -->
+                <div id="law-6" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">6. The Law of Compensation (Hukum Kompensasi)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Alirkan Berkatmu Melalui Kekuatan Infaq dan Sedekah</p>
+                    <p class="text-slate-300">Rezeki itu ibarat air di dalam genggaman. Semakin kuat Anda menggenggamnya karena takut kehilangan (pelit), air itu akan rembes keluar dan habis. Namun, Hukum Kompensasi menyatakan bahwa alam semesta akan memberikan imbalan yang setara dengan kontribusi yang kita berikan.</p>
+                    <p class="text-slate-300">Buka tanganmu untuk memberikan solusi bagi mereka yang kehausan melalui infaq dan sedekah. Gayung Allah yang Maha Luas akan terus mengisi tanganmu kembali dengan kompensasi yang berlipat ganda <span class="text-gold-400 font-medium">[Al-Qur'an Surah Al-Baqarah: 261]</span>. Infaq dan Sedekah tidak pernah mengurangi hartamu, ia justru memotong rantai kemiskinan dalam mentalmu.</p>
+                </div>
+
+                <!-- Point 7 -->
+                <div id="law-7" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">7. The Law of Relativity & Polarity (Hukum Relativitas & Polaritas)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Amankan Kedamaian Jiwamu dengan Kekuatan Sabar dan Qonaah</p>
+                    <p class="text-slate-300">Hidup ini tidak selalu berada di atas. Hukum Polaritas menyatakan segala hal memiliki dua kutub yang berlawanan (rugi-untung, sepi-ramai), dan Hukum Relativitas mengingatkan bahwa berat atau ringannya ujian tergantung dari sudut pandang kita membandingkannya.</p>
+                    <p class="text-slate-300">Ketika badai keuangan menghantam, sifat qonaah (merasa cukup) membebaskanmu dari siksaan membanding-bandingkan nasib dengan orang lain <span class="text-gold-400 font-medium">[Hadits Riwayat Bukhari & Muslim]</span>. Sabar bukanlah menyerah kalah, melainkan kemampuan menjaga stabilitas energi batinmu agar tidak hancur di kutub bawah. Ingatlah, kesulitan tidak pernah datang sendirian, ia selalu digandeng oleh kemudahan <span class="text-gold-400 font-medium">[Al-Qur'an Surah Al-Insyirah: 5]</span>.</p>
+                </div>
+
+                <!-- Point 8 -->
+                <div id="law-8" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">8. The Law of Rhythm (Hukum Irama)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Tegakkan Jangkar Hidupmu dengan Kekuatan Iman</p>
+                    <p class="text-slate-300">Roda kehidupan ekonomi dunia akan selalu bergerak dalam iramanya—ada masa resesi, ada masa jaya, ada pasang, ada surut <span class="text-gold-400 font-medium">[Al-Qur'an Surah Ali 'Imran: 140]</span>. Orang yang tidak memiliki jangkar Iman yang kokoh akan ikut terombang-ambing oleh irama ini; mereka menjadi sombong dan gila harta saat di atas, lalu hancur berantakan hingga depresi saat jatuh miskin di bawah.</p>
+                    <p class="text-slate-300">Iman menjagamu tetap stabil di tengah ayunan ritme alam semesta. Ia membuatmu sadar bahwa kekayaan hari ini adalah titipan ujian, dan kemiskinan hari ini hanyalah sebuah fase siklus sementara yang pasti akan berlalu.</p>
+                </div>
+
+                <!-- Point 9 -->
+                <div id="law-9" class="space-y-2 pt-2 border-t border-slate-800">
+                    <h4 class="font-heading font-bold text-gold-400 text-base md:text-lg">9. The Law of Gender (Hukum Gender / Hukum Proses)</h4>
+                    <p class="text-xs uppercase font-semibold text-slate-400">Rebahkan Seluruh Lelahmu dalam Dekapan Kekuatan Tawakal</p>
+                    <p class="text-slate-300">Hukum Gender mengajarkan bahwa segala sesuatu di alam semesta membutuhkan waktu pengeraman (<em>gestation period</em>) dan keseimbangan dua energi: energi maskulin (aksi nyata/ikhtiar) dan energi feminin (penerimaan/pasrah). Dalam Islam, harmoni tertinggi dari kedua energi ini dinamakan Tawakal.</p>
+                    <p class="text-slate-300">Setelah semua peluh Anda tumpahkan siang hari (maskulin), maka malam hari matikan laptopmu, tarik napas dalam-dalam, dan pasrahkan segalanya kepada Allah (feminin). Tugas fisikmu di bumi sudah selesai, sekarang biarkan waktu pengeraman takdir berjalan di langit <span class="text-gold-400 font-medium">[Al-Qur'an Surah At-Talaq: 3]</span>. Ketika Anda mampu merebahkan segala kekhawatiranmu dan melibatkan Allah, Anda tidak akan pernah mengenal apa itu stres.</p>
+                </div>
+
+                <!-- Penutup / Kesimpulan -->
+                <div class="p-5 rounded-xl bg-gradient-to-r from-gold-500/20 to-slate-800/80 border border-gold-500/30 space-y-3 mt-6">
+                    <h4 class="font-heading font-bold text-gold-300 text-lg">Kesimpulan: Rasakan Dorongan Ini Sekarang!</h4>
+                    <p class="text-slate-200">Saudaraku, berhentilah menyiksa dirimu dengan kepanikan yang tidak berguna. Detik ini juga, sadarilah bahwa rezekimu sudah dijamin oleh pemilik alam semesta dan tidak akan pernah tertukar. Tarik napas dalam-dalam, rasakan kekuatan kasih sayang Allah mengalir di tubuhmu.</p>
+                    <p class="text-slate-200">Bangkitlah dengan wajah tegak. Mulai hari ini, selaraskan dirimu dengan 9 Hukum Ilahi ini. Tumbuhkan rasa peduli, hidupkan jalinan silaturahmi, setel pikiran pada frekuensi khusnudzon, bersedekahlah dengan sisa uang yang ada, dan melangkahlah dengan taqwa. Demi Allah, ketika Anda memantaskan diri di hadapan-Nya, rezeki yang akan kelelahan mengejarmu, bukan kamu yang lelah mengejarnya.</p>
+                    <p class="text-slate-200">Semoga Allah Subhanahu Wata'ala senantiasa mempermudah jalan ikhtiar kita dan melimpahkan keberkahan yang tiada putus. Terima kasih atas perhatiannya, sampai jumpa di puncak kesuksesan, dan <strong>Wassalamu’alaikum Warahmatullahi Wabarakatuh</strong>.</p>
+                </div>
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="p-4 border-t border-slate-700/60 bg-slate-900/80 flex justify-end">
+                <button onclick="toggleNarrationModal()" class="px-5 py-2 rounded-lg bg-gold-500 text-slate-950 font-bold hover:bg-gold-400 transition text-sm">
+                    Tutup Narasi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Switch between Slide 1 and Slide 2
+        function goToSlide(slideNumber) {
+            const slide1 = document.getElementById('slide1');
+            const slide2 = document.getElementById('slide2');
+            const audioPlayer = document.getElementById('audioPlayer');
+
+            if (slideNumber === 2) {
+                slide1.classList.remove('slide-active');
+                slide1.classList.add('slide-hidden');
+                
+                slide2.classList.remove('slide-hidden');
+                slide2.classList.add('slide-active');
+                
+                // Auto scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                slide2.classList.remove('slide-active');
+                slide2.classList.add('slide-hidden');
+                
+                slide1.classList.remove('slide-hidden');
+                slide1.classList.add('slide-active');
+
+                // Pause audio if returning to slide 1
+                if (audioPlayer) {
+                    audioPlayer.pause();
+                }
+            }
+        }
+
+        // Toggle Narration Modal
+        function toggleNarrationModal(lawIndex = null) {
+            const modal = document.getElementById('narrationModal');
+            const isHidden = modal.classList.contains('pointer-events-none');
+
+            if (isHidden) {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                modal.classList.add('opacity-100', 'pointer-events-auto');
+
+                // If clicked from a specific card, scroll to that section in modal
+                if (lawIndex) {
+                    setTimeout(() => {
+                        const element = document.getElementById(`law-${lawIndex}`);
+                        if (element) {
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 200);
+                }
+            } else {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modal.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+        }
+    </script>
+</body>
+</html>
